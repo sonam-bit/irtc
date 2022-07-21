@@ -1,0 +1,100 @@
+<style>
+    .logo{
+        width:40px;
+        height: 40px;
+        margin-right: 2rem;
+    }
+    .navbar{
+        background-color:white;
+        box-shadow: 0 1px 10px grey;
+        padding-top: 1rem;
+        text-transform: uppercase;
+        display: block;
+    }
+    .container-fluid{
+        display: flex;
+    }
+    .active{
+        background-color: blue;
+       
+    }
+    .nav-item .active{
+        color: white;
+        font-weight: bolder;
+    }
+    .train{
+        text-decoration: underline;
+        color: orangered;
+    }
+    
+
+</style>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <img [src]="path" class="logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">agent login</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">contact us</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">EMAIL</a></li>
+                <li><a class="dropdown-item" href="#">CHAT BOT</a></li>
+                <li><a class="dropdown-item" href="#">CALL</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="train nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: rgb(255, 102, 0);">
+                      Train
+                    </a>
+                
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Book Ticket</a></li>
+                            <li><a class="dropdown-item" href="#">Pnr Enquiry</a></li>
+                            <li><a class="dropdown-item" href="#">Query</a></li>
+                            <li><a class="dropdown-item" href="#">Track Train</a></li>
+                            <li><a class="dropdown-item" href="#">Cancel Ticket</a></li>
+                          </ul>
+                   
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Holidays</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Meals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Buses</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Flight</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">loyality</a>
+                  </li>
+
+            </ul>
+          
+        </form>
+      </div>
+    </div>
+  </nav>
